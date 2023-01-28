@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 54rem;
+    padding: 6.4rem 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+img {
+    max-width: clamp(21rem, 65vw, 35rem);
+}
+
+h1 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 4rem;
+
+    padding-top: 3.2rem;
+    color: #3F3D56;
+}
+
+span {
+    font-weight: 700;
+    color: #EE24FF;
+}
+
+p {
+    margin-top: 1.6rem;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+
+    color: #828282;
+}
+
+strong {
+    color: #3F3D56;
+}
+
+footer{
+    background: url(./images/waveFooter.svg) no-repeat bottom/cover;
+    height: 17.6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.links {
+    margin-top: -9rem;
+    width: 39.1rem;
+    padding-top: 1.6rem;
+    border-top: 1px solid #ECEFF2;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li a{
+    text-decoration: none;
+    color: currentColor;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 47.938em) {
+    main {
+        padding: 6.4rem clamp(1rem, 3vw, 4rem);
+    }
+
+    h1{
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+}
